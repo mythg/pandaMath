@@ -1,0 +1,15 @@
+<!--pages/posts/posts.wxml-->
+<import src="posts-item/posts-item-template.wxml" />
+
+<view>
+  <swiper class="posts-swiper"  indicator-dots="true" autoplay="true" interval="2000">
+    <swiper-item><image src="/images/wx.png" class="posts-swiper-item"></image></swiper-item>
+    <swiper-item><image src="/images/vr.png" class="posts-swiper-item"></image></swiper-item>
+    <swiper-item><image src="/images/iqiyi.png" class="posts-swiper-item"></image></swiper-item>
+  </swiper>
+
+<block wx:for="{{posts_content}}" wx:for-item="item">
+  <template is="posts-item" data="{{item}}" />
+</block>
+
+</view>

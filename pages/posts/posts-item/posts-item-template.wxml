@@ -2,17 +2,17 @@
 
 <view class="posts-content">
     <view class="posts-content-author-data">
-      <image class="posts-content-author" src="{{item.avatar}}"></image>
-      <text class="posts-content-date">{{item.date}}</text>
+      <image class="posts-content-author" src="{{avatar}}"></image>
+      <text class="posts-content-date">{{date}}</text>
     </view>
-    <text class="posts-content-title">{{item.title}}</text>
-    <image class="posts-content-image" src="{{item.imgSrc}}"></image>
-    <text class="posts-content-text">{{item.content}}</text>
+    <text class="posts-content-title">{{title}}</text>
+    <image class="posts-content-image" src="{{imgSrc}}"></image>
+    <text class="posts-content-text">{{content}}</text>
     <view class="posts-content-collection">
       <image class="posts-content-collection-icon" src="/images/icon/chat.png"></image>
-      <text class="posts-content-collection-text">{{item.collection}}</text>
+      <text class="posts-content-collection-text">{{collection}}</text>
       <image class="posts-content-collection-icon" src="/images/icon/view.png"></image>
-      <text class="posts-content-collection-text">{{item.reading}}</text>
+      <text class="posts-content-collection-text">{{reading}}</text>
     </view>
   </view>
 

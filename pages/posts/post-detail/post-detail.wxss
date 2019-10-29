@@ -1,0 +1,6 @@
+/* pages/posts/post-detail/post-detail.wxss */
+
+.container {
+  display: flex;
+  flex-direction: column;
+}

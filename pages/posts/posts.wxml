@@ -9,7 +9,9 @@
   </swiper>
 
 <block wx:for="{{posts_content}}" wx:for-item="item">
-  <template is="posts-item" data="{{item}}" />
+  <view catch:tap="onPostTap" data-postId="{{item.postId}}">
+    <template is="posts-item" data="{{...item}}" />
+  </view>
 </block>
 
 </view>

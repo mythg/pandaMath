@@ -1,44 +1,46 @@
-// pages/posts/posts.js
-var postsData = require('../../data/post-data.js')
-
+// pages/posts/post-detail/post-detail.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    posts_content: []
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    this.setData({ posts_content: postsData.postList });
+
   },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
+
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
+
   },
 
   /**
    * 生命周期函数--监听页面隐藏
    */
   onHide: function () {
+
   },
 
   /**
    * 生命周期函数--监听页面卸载
    */
   onUnload: function () {
+
   },
 
   /**
@@ -60,17 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-
-  /**
-   * 文章详情
-   */
-  onPostTap: (event) => {
-    let postId = event.currentTarget.dataset.postid;
-
-    wx.navigateTo({
-      url: "post-detail/post-detail"
-    })
   }
-
 })
